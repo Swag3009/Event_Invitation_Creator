@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+}
+body{
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#heading{
+    font-weight: 900;
+    color: #0d47a1;
+    text-align: center;
+}
+label{
+    font-weight: bold;
+    color: #0d47a1;
+}
+input, textarea{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f3f4f6;
+    border-color: #3498db;
+    display: block;
+    width: 95%;
+    margin-bottom: 1rem;
+}
+input:focus{
+    border-color: #ff5722;
+    outline:solid 0.5px #ff5722;
+}
+textarea:focus{
+    border-color: #ff5722;
+    outline:solid 0.5px #ff5722;
+}
+
+.formContainer {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    padding: 30px;
+}
+button[type="submit"]{
+    text-align: center;
+    background-color: #ff6b00;
+    border:0;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #fff;
+}
+button[type="submit"]:hover{
+    background-color: #ff4b00;
+    color: #eee;
+}
+#modal{
+    display: none;
+    width: 30rem;
+    font-size: 1.5rem;
+    height: 15rem;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    border-radius: 30px;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+}
+#modal button{
+    display: inline;
+    background-color: #fff;
+    font-size: 2.2rem;
+    border: 0;
+    color: #FF0000;
+    font-weight: bold;
+    position: absolute;
+    offset: 0px 0px 10px 20px;
+    background-color: transparent;
+    top: 5px;
+    right: 15px;
+}
+#modal p{
+    text-align: center;
+    align-items: center;
+    margin:auto;
+    position: relative;
+    font-weight: bold;
+    color: white;
+}
+#modal button:hover{
+    color: #aa0000;
+}
+#display{
+    display: none;
+    flex-direction: column;
+    maxWidth: 300px;
+    width: 80%;
+    max-height: 80vh;
+    background-color: #fff;
+    border: solid 5px #e74c3c;
+    border-radius: 30px;
+    padding: 20px;
+}
+#invitation{
+    text-align: center;
+    color: #e74c3c;
+}
+#toJoin{
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+#event{
+    text-align: center;
+    font-weight: 900 ;
+
+}
+#date{
+    color: #e74c3c;
+    font-weight: 900;
+}
+#time{
+    font-size: 0.8rem;
+}
+#locationData{
+    font-weight: 900;
+}
+#description{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-style: italic;
+}

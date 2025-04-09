@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Event_Invitation_Creator</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class = "formContainer">
+      <h1 id="heading">Create an Event Invite</h1>
+      <form>
+	<label for="eventName">Event Name</label>
+	<input placeholder="Kerala JS Meetup" type="text" value="" id="eventName"/>
+	<label for="eventDate">Event Date</label>
+	<input name="" type="date" value="" id="eventDate"/>
+	<label for="startTime">Start Time</label>
+	<input name="" type="time" value="" id="startTime"/>
+	<label for="endTime">End Time</label>
+	<input name="" type="time" value="" id="endTime"/>
+	<label for="eventDesc">Event Description</label>
+	<textarea cols="30" id="eventDesc" placeholder="Brief description of the event" rows="2"></textarea>
+	<label for="location">Location</label>
+	<input placeholder="Location of the event" type="text" value="" id="location"/>
+	<button type="submit" id="submit">Create Event</button>
+      </form>
+    </div>
+    <div id = "modal">
+      <button type="button" id="clsBtn">×</button>
+      <p>Please fill in all fields</p>
+    </div>
+    <div id = "display" style = "display: none;width: 300px; height: 400px; background: #fff">
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
